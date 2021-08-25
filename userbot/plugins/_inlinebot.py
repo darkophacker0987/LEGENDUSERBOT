@@ -326,14 +326,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     link_preview=False,
                 )
             else:
-                reply_pop_up_alert = "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™"
+                reply_pop_up_alert = "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © LegendBot ™"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
-            veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
+            veriler = custom.Button.inline(f"{legend_emoji1} Re-Open Menu {hell_emoji}", data="reopen")
             await event.edit(f"**⚜️ legendbot Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {legend_mention}\n\n        [©️ legendbot ™️]({chnl_link})", buttons=veriler, link_preview=False)
         else:
             reply_pop_up_alert = "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™"
@@ -381,7 +381,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline(f"{legend_emoji} Main Menu {legend_emoji}", data=f"page({page})")])
+        buttons.append([custom.Button.inline(f"{legend_emoji1} Main Menu {legend_emoji2}", data=f"page({page})")])
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
                 f"**📗 File :**  `{commands}`\n**🔢 Number of commands :**  `{len(CMD_HELP_BOT[commands]['commands'])}`",
