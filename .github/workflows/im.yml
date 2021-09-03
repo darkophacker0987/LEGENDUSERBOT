@@ -1,5 +1,5 @@
 
-name: Krishna Kumar
+name: Prince Raj
 
 on: push
 
@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "HELL"
+          find: "LEGEND"
 
-          replace: "LEGEND"
+          replace: "Cyber"
 
       - name: Create Pull Request
 
@@ -35,6 +35,6 @@ jobs:
 
           repository: .
 
-          commit_user_name: LEGEND-OS
+          commit_user_name: darkhacker0987
 
-          commit_user_email: Krishna045Jaiswal@gmail.com
+          commit_user_email: rajprince73123@gmail.com 
