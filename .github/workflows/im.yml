@@ -21,7 +21,7 @@ jobs:
 
           find: "LEGEND"
 
-          replace: "Cyber"
+          replace: "Electro"
 
       - name: Create Pull Request
 
